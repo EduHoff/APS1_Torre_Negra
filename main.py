@@ -5,7 +5,7 @@ def main() -> None:
     while True:
         clear()
         print("Por favor, escolha uma classe:")
-        escolha: str = input("0 | mago \n1 | lutador \n2 | dragão \n\n|| ")
+        escolha: str = input("0 | mago \n1 | guerreiro \n2 | dragão \n\n|| ")
 
         match escolha:
             case '0':

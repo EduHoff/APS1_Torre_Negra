@@ -184,7 +184,7 @@ def caminho_mago() -> None:
     if destrutiva and carroca and arredores and questionar and nao_matar_homem and torre:
         while True:
             clear()
-            print("Você segue até a torre, quando chega a porta não ta trancada, você adentra e vê uma cena estranha, uma carnificina enorme havia acontecido, varios monstros estando mortos pelo chão, o que você fara agora:")
+            print("Você segue até a torre, quando chega a porta não ta trancada, você adentra e vê uma cena estranha, uma carnificina enorme havia acontecido, vários monstros estando mortos pelo chão, o que você fara agora:")
             escolha: str = input("0 | explorar \n1 | avançar \n\n|| ")
 
             match escolha:
@@ -201,7 +201,7 @@ def caminho_mago() -> None:
     if destrutiva and carroca and arredores and questionar and nao_matar_homem and torre and explorar:
         while True:
             clear()
-            print("Não tem nada muito interessante de se encontrar nesse lugar alem do sangue e corpos de monstros, mas você acha um cajado de gelo e melhor que o seu, agora você pode avançar, você chega em duas portas uma delas é feita de lava enquanto a outra é feita de gelo:")
+            print("Não tem nada muito interessante de se encontrar nesse lugar além do sangue e corpos de monstros, mas você acha um cajado de gelo e melhor que o seu, agora você pode avançar, você chega em duas portas uma delas é feita de lava enquanto a outra é feita de gelo:")
             escolha: str = input("0 | porta de lava \n1 | porta de gelo \n\n|| ")
 
             match escolha:
@@ -247,7 +247,7 @@ def caminho_mago() -> None:
     if destrutiva and carroca and arredores and questionar and nao_matar_homem and torre and (explorar or avancar) and gelo:
         while True:
             clear()
-            print("Você chega numa enorme biblioteca, parece que encontrou o que veio pra fazer aqui, você encontra inumeros tipos de magias interessantes, você agora pode ir embora com todo esse conhecimento, ou ir ver o que tem na outra porta:")
+            print("Você chega numa enorme biblioteca, parece que encontrou o que veio pra fazer aqui, você encontra inúmeros tipos de magias interessantes, você agora pode ir embora com todo esse conhecimento, ou ir ver o que tem na outra porta:")
             escolha: str = input("0 | ir embora \n1 | porta de lava \n\n|| ")
 
             match escolha:
@@ -264,7 +264,7 @@ def caminho_mago() -> None:
     if destrutiva and carroca and arredores and questionar and nao_matar_homem and torre and (explorar or avancar) and gelo and ir_embora:
         while True:
             clear()
-            print("Depois de adiquirir toda a coleção de items magicos e livros, você volta pra sua cidade e cria uma guilda de magia extremamente bem sucedida, final feliz.")
+            print("Depois de adquirir toda a coleção de itens mágicos e livros, você volta pra sua cidade e cria uma guilda de magia extremamente bem sucedida, final feliz.")
             input("\nPressione Enter para continuar...")
             return
     
@@ -278,7 +278,7 @@ def caminho_mago() -> None:
     if destrutiva and carroca and arredores and questionar and nao_matar_homem and torre and explorar and gelo and lava:
         while True:
             clear()
-            print("Você chega numa sala cheia de sangue e varios corpos de humanos e monstros, em cima deles dorme um dragão bem machucado, você pode acabar com ele ou só ir embora:")
+            print("Você chega numa sala cheia de sangue e vários corpos de humanos e monstros, em cima deles dorme um dragão bem machucado, você pode acabar com ele ou só ir embora:")
             escolha: str = input("0 | matar o dragão \n1 | ir embora \n\n|| ")
 
             match escolha:
@@ -294,7 +294,7 @@ def caminho_mago() -> None:
     
     if destrutiva and carroca and arredores and questionar and nao_matar_homem and torre and explorar and gelo and lava and matar_dragao:
         clear()
-        print("Parabéns você com todo os itens magicos e novas magias que roubou do dragão você é capaz de matar ele sem nenhum problema, nem ser pego por qualquer tipo de armadilha besta, quando volta ao reino é tido como herói e vive até o fim de sua vida como nobre, final feliz… pra você.")
+        print("Parabéns você com todo os itens mágicos e novas magias que roubou do dragão você é capaz de matar ele sem nenhum problema, nem ser pego por qualquer tipo de armadilha besta, quando volta ao reino é tido como herói e vive até o fim de sua vida como nobre, final feliz… pra você.")
         input("\nPressione Enter para continuar...")
         return
     
