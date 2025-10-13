@@ -1,5 +1,5 @@
 from auxiliar import clear, controle_main_loop
-from caminhos import caminho_mago, caminho_lutador, caminho_dragao
+from caminhos import caminho_mago, caminho_guerreiro, caminho_dragao
 
 def main() -> None:
     while True:
@@ -12,7 +12,7 @@ def main() -> None:
                 caminho_mago()
                 break
             case '1':
-                caminho_lutador()
+                caminho_guerreiro()
                 break
             case '2':
                 caminho_dragao()
