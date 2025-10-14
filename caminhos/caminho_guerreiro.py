@@ -27,13 +27,13 @@ def caminho_guerreiro() -> None:
     while True:
         clear()
         print("Era mais um dia normal em uma das principais cidades do reino, até que um homem chegou, ele usava uma roupa preta e tinha uma aura de maldade ao seu redor, dois dias depois uma enorme torre negra foi erguida no centro da cidade, vários monstros surgiram e tomaram a cidade, você morava ali na região numa casa solitária na floresta, você era um lenhador que usava as próprias mãos pra pegar madeira, de qualquer forma o que você fará agora?")
-        escolha: str = input("0 | ir pra cidade \n1 | ir pra torre \n\n|| ")
+        escolha: str = input("1 | ir pra cidade \n2 | ir pra torre \n\n|| ")
 
         match escolha:
-            case '0':
+            case '1':
                 cidade=True
                 break
-            case '1':
+            case '2':
                 torre=True
                 break
             case _:
@@ -44,13 +44,13 @@ def caminho_guerreiro() -> None:
         while True:
             clear()
             print("Você vai em direção a cidade procurando ajudar as pessoas, você enfrenta vários monstros e consegue salvar varias pessoas evacuando uma grande parte das pessoas da cidade, durante essa evacuação você consegue salvar um soldado da cidade da morte certa, ele decide se juntar a você o que fará agora?")
-            escolha: str = input("0 | continua explorando \n1 | ir para torre \n\n|| ")
+            escolha: str = input("1 | continua explorando \n2 | ir para torre \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     continua_explorando=True
                     break
-                case '1':
+                case '2':
                     torre=True
                     break
                 case _:
@@ -61,13 +61,13 @@ def caminho_guerreiro() -> None:
         while True:
             clear()
             print("Vocês continuam explorando a cidade e ajudando as ultimas pessoas a saírem além de limparem grande parte dos monstros que estavam ali, vocês então podem finalmente ir até a torre porém vocês estão meio desgastados:")
-            escolha: str = input("0 | descansar \n1 | ir para torre \n\n|| ")
+            escolha: str = input("1 | descansar \n2 | ir para torre \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     descansar=True
                     break
-                case '1':
+                case '2':
                     torre=True
                     break
                 case _:
@@ -78,13 +78,13 @@ def caminho_guerreiro() -> None:
         while True:
             clear()
             print("Sem descansar vocês avançam até a torre, quando chegam na porta uma grande armadura viva abre a porta, pelo cansaço vocês não tem reação contra essa coisa que rapidamente mata o seu companheiro:")
-            escolha: str = input("0 | atacar \n1 | fugir \n\n|| ")
+            escolha: str = input("1 | atacar \n2 | fugir \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     atacar=True
                     break
-                case '1':
+                case '2':
                     fugir=True
                     break
                 case _:
@@ -107,13 +107,13 @@ def caminho_guerreiro() -> None:
         while True:
             clear()
             print("Vocês encontram um lugar para descansar e conseguem recuperar suas energias e logo vão até a porta da torre, quando vocês chegam na torre a porta abre por si mesma uma enorme armadura viva ali andando em direção a vocês:")
-            escolha: str = input("0 | tática \n1 | desviar \n\n|| ")
+            escolha: str = input("1 | tática \n2 | desviar \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     tatica=True
                     break
-                case '1':
+                case '2':
                     desviar=True
                     break
                 case _:
@@ -130,13 +130,13 @@ def caminho_guerreiro() -> None:
         while True:
             clear()
             print("Você desvia do ataque da armadura o que abre a  oportunidade pra algo:")
-            escolha: str = input("0 | atacar \n1 | fugir \n\n|| ")
+            escolha: str = input("1 | atacar \n2 | fugir \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     atacar=True
                     break
-                case '1':
+                case '2':
                     fugir=True
                     break
                 case _:
@@ -147,13 +147,13 @@ def caminho_guerreiro() -> None:
         while True:
             clear()
             print("Vocês aproveitam a oportunidade pra atacar a armadura, removendo o capacete o que desmonta a armadura inteira, vocês entram pra dentro da torre e existem inúmeros inimigos ali dentro:")
-            escolha: str = input("0 | fugir \n1 | enfrentar \n\n|| ")
+            escolha: str = input("1 | fugir \n2 | enfrentar \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     fugir=True
                     break
-                case '1':
+                case '2':
                     enfrentar=True
                     break
                 case _:
@@ -164,13 +164,13 @@ def caminho_guerreiro() -> None:
         while True:
             clear()
             print("Vocês percebem que não é possível enfrentar todos os monstros ao mesmo tempo então escolhem atrair os monstros para uma armadilha, uma construção que estava pegando fogo, quando os monstros entram vocês saem derrubando a casa e matando todos, vocês então vão de volta até a torre o que vão fazer?")
-            escolha: str = input("0 | explorar \n1 | avançar \n\n|| ")
+            escolha: str = input("1 | explorar \n2 | avançar \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     explorar=True
                     break
-                case '1':
+                case '2':
                     avancar=True
                     break
                 case _:
@@ -187,16 +187,16 @@ def caminho_guerreiro() -> None:
         while True:
             clear()
             print("Você encontra uma chave preta, e nada mais que seja útil, subindo na torre vocês encontram duas portas uma de lava e outra de gelo")
-            escolha: str = input("0 | porta de lava \n1 | porta de gelo \n2 | outra \n\n|| ")
+            escolha: str = input("1 | porta de lava \n2 | porta de gelo \n3 | outra \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     lava=True
                     break
-                case '1':
+                case '2':
                     gelo=True
                     break
-                case '2':
+                case '3':
                     outra=True
                     break
                 case _:

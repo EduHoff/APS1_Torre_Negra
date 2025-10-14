@@ -5,16 +5,16 @@ def main() -> None:
     while True:
         clear()
         print("Por favor, escolha uma classe:")
-        escolha: str = input("0 | mago \n1 | guerreiro \n2 | dragão \n\n|| ")
+        escolha: str = input("1 | mago \n2 | guerreiro \n3 | dragão \n\n|| ")
 
         match escolha:
-            case '0':
+            case '1':
                 caminho_mago()
                 break
-            case '1':
+            case '2':
                 caminho_guerreiro()
                 break
-            case '2':
+            case '3':
                 caminho_dragao()
                 break
             case _:

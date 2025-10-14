@@ -16,13 +16,13 @@ def caminho_dragao() -> None:
         while True:
             clear()
             print("Você é um dragão qualquer, você estava vivendo uma vida tranquila na sua caverna em sua pilha de tesouros, você vê um homem chegando na entrada da caverna:")
-            escolha: str = input("0 | questionar \n1 | matar \n\n|| ")
+            escolha: str = input("1 | questionar \n2 | matar \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     questionar=True
                     break
-                case '1':
+                case '2':
                     matar=True
                     break
                 case _:

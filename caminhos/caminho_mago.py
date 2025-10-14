@@ -42,13 +42,13 @@ def caminho_mago() -> None:
     while True:
         clear()
         print("Por favor, escolha seu foco de magia:")
-        escolha: str = input("0 | destrutiva \n1 | construtiva \n\n|| ")
+        escolha: str = input("1 | destrutiva \n2 | construtiva \n\n|| ")
 
         match escolha:
-            case '0':
+            case '1':
                 destrutiva=True
                 break
-            case '1':
+            case '2':
                 construtiva=True
                 break
             case _:
@@ -59,13 +59,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Existem boatos de um dragão em um reino próximo que está causando muitos problemas, equipado com seu cajado de fogo, você está indo em direção ao dito reino, seja em busca de magias mais poderosas ou talvez liberar o reino desse mal, escolha o sua forma de transporte:")
-            escolha: str = input("0 | carroça \n1 | caminhada \n\n|| ")
+            escolha: str = input("1 | carroça \n2 | caminhada \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     carroca=True
                     break
-                case '1':
+                case '2':
                     caminhada=True
                     break
                 case _:
@@ -76,13 +76,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Você acha um homem disposto a te levar até o reino, durante a viagem você presta atenção no homem que é meio suspeito, depois de algum tempo vocês chegam no reino, uma enorme torre negra estava no centro do reino, você sai da carroça o que fará agora:")
-            escolha: str = input("0 | seguir até a torre \n1 | investigar os arredores \n\n|| ")
+            escolha: str = input("1 | seguir até a torre \n2 | investigar os arredores \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     torre=True
                     break
-                case '1':
+                case '2':
                     arredores=True
                     break
                 case _:
@@ -99,13 +99,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Você olha os seus arredores, prestando bastante atenção, você percebe um movimento suspeito do homem, o que fara agora:")
-            escolha: str = input("0 | questionar \n1 | atacar \n\n|| ")
+            escolha: str = input("1 | questionar \n2 | atacar \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     questionar=True
                     break
-                case '1':
+                case '2':
                     atacar=True
                     break
                 case _:
@@ -116,13 +116,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Você ataca o homem suspeito, matando ele antes que ele possa te matar, você agora está livre:")
-            escolha: str = input("0 | seguir até a torre \n1 | esperar \n\n|| ")
+            escolha: str = input("1 | seguir até a torre \n2 | esperar \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     torre=True
                     break
-                case '1':
+                case '2':
                     esperar=True
                     break
                 case _:
@@ -139,13 +139,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Você pergunta a ele o que ele pensa que está fazendo, em um susto ele cai pra traz e deixa a faca cair, ele se ajoelha e começa a implorar por piedade:")
-            escolha: str = input("0 | matar \n1 | não matar \n\n|| ")
+            escolha: str = input("1 | matar \n2 | não matar \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     matar_homem=True
                     break
-                case '1':
+                case '2':
                     nao_matar_homem=True
                     break
                 case _:
@@ -162,13 +162,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Você decide não matar ele e mandar ele embora, ele vai indo correndo, agora você ta livre pra continuar até a torre:")
-            escolha: str = input("0 | seguir até a torre \n1 | esperar \n\n|| ")
+            escolha: str = input("1 | seguir até a torre \n2 | esperar \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     torre=True
                     break
-                case '1':
+                case '2':
                     esperar=True
                     break
                 case _:
@@ -185,13 +185,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Você segue até a torre, quando chega a porta não ta trancada, você adentra e vê uma cena estranha, uma carnificina enorme havia acontecido, vários monstros estando mortos pelo chão, o que você fara agora:")
-            escolha: str = input("0 | explorar \n1 | avançar \n\n|| ")
+            escolha: str = input("1 | explorar \n2 | avançar \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     explorar=True
                     break
-                case '1':
+                case '2':
                     avancar=True
                     break
                 case _:
@@ -202,13 +202,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Não tem nada muito interessante de se encontrar nesse lugar além do sangue e corpos de monstros, mas você acha um cajado de gelo e melhor que o seu, agora você pode avançar, você chega em duas portas uma delas é feita de lava enquanto a outra é feita de gelo:")
-            escolha: str = input("0 | porta de lava \n1 | porta de gelo \n\n|| ")
+            escolha: str = input("1 | porta de lava \n2 | porta de gelo \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     lava=True
                     break
-                case '1':
+                case '2':
                     gelo=True
                     break
                 case _:
@@ -219,13 +219,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Sem perder tempo, você chega em duas portas uma delas é feita de lava enquanto a outra é feita de gelo:")
-            escolha: str = input("0 | porta de lava \n1 | porta de gelo \n\n|| ")
+            escolha: str = input("1 | porta de lava \n2 | porta de gelo \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     lava=True
                     break
-                case '1':
+                case '2':
                     gelo=True
                     break
                 case _:
@@ -248,13 +248,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Você chega numa enorme biblioteca, parece que encontrou o que veio pra fazer aqui, você encontra inúmeros tipos de magias interessantes, você agora pode ir embora com todo esse conhecimento, ou ir ver o que tem na outra porta:")
-            escolha: str = input("0 | ir embora \n1 | porta de lava \n\n|| ")
+            escolha: str = input("1 | ir embora \n2 | porta de lava \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     ir_embora=True
                     break
-                case '1':
+                case '2':
                     lava=True
                     break
                 case _:
@@ -279,13 +279,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Você chega numa sala cheia de sangue e vários corpos de humanos e monstros, em cima deles dorme um dragão bem machucado, você pode acabar com ele ou só ir embora:")
-            escolha: str = input("0 | matar o dragão \n1 | ir embora \n\n|| ")
+            escolha: str = input("1 | matar o dragão \n2 | ir embora \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     matar_dragao=True
                     break
-                case '1':
+                case '2':
                     ir_embora=True
                     break
                 case _:
@@ -315,13 +315,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Existem boatos de um dragão em um reino próximo que está causando muitos problemas, você está indo em direção ao dito reino, para ajudar os outros e talvez conseguir convencer o dragão a ir embora, escolha sua forma de transporte:")
-            escolha: str = input("0 | carroça \n1 | caminhada \n\n|| ")
+            escolha: str = input("1 | carroça \n2 | caminhada \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     carroca=True
                     break
-                case '1':
+                case '2':
                     caminhada=True
                     break
                 case _:
@@ -338,13 +338,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Você decide ir caminhando, é um caminho mais longo porem pode ser melhor pra você, os animais são mais honestos e legais que as pessoas de qualquer forma, durante sua caminhada você ouve algo o que fará?")
-            escolha: str = input("0 | investigar \n1 | seguir seu caminho \n\n|| ")
+            escolha: str = input("1 | investigar \n2 | seguir seu caminho \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     investigar=True
                     break
-                case '1':
+                case '2':
                     seguir_caminho=True
                     break
                 case _:
@@ -361,13 +361,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Indo até a origem do barulho você acha um filhote de urso com a pata presa, como você não é um monstro você ajuda ele e também cura o pobre filhote, porem a mãe logo chega você explica toda a situação e a mãe urso parece bem compreensiva, ela te convida pra seguir ela:")
-            escolha: str = input("0 | seguir a ursa \n1 | seguir seu caminho \n\n|| ")
+            escolha: str = input("1 | seguir a ursa \n2 | seguir seu caminho \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     seguir_ursa=True
                     break
-                case '1':
+                case '2':
                     seguir_caminho=True
                     break
                 case _:
@@ -384,13 +384,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Ela te leva pra toca dela e te oferece algo pra comer, você agradece mas prefere não aceitar, após ela falar com seu parceiro a ursa se junta a você para continuar sua aventura, como um agradecimento por salvar seu filho, vocês seguem até a torre juntos, vocês chegam na cidade, alguns goblins se afastam quando veem você e a ursa ali e agora vocês podem escolher fazer algo:")
-            escolha: str = input("0 | explorar a cidade \n1 | entrar na torre \n\n|| ")
+            escolha: str = input("1 | explorar a cidade \n2 | entrar na torre \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     cidade=True
                     break
-                case '1':
+                case '2':
                     torre=True
                     break
                 case _:
@@ -407,13 +407,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Vocês entram dentro da torre, dentro dela existem vários monstros mortos, prece que alguém passou por aqui antes de vocês, o que fará?")
-            escolha: str = input("0 | avançar \n1 | explorar \n\n|| ")
+            escolha: str = input("1 | avançar \n2 | explorar \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     avancar=True
                     break
-                case '1':
+                case '2':
                     explorar=True
                     break
                 case _:
@@ -430,13 +430,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Você encontra um monstro ainda vivo usando um cajado de gelo, a ursa com sua ajuda consegue matar ele, e você pega o cajado pra você, não é o tipo de cajado que você usa mas pode servir pra outra pessoa, você segue na torre até que chega em duas portas uma de lava e outra de gelo o que você faz?")
-            escolha: str = input("0 | porta de gelo \n1 | porta de lava \n\n|| ")
+            escolha: str = input("1 | porta de gelo \n2 | porta de lava \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     gelo=True
                     break
-                case '1':
+                case '2':
                     lava=True
                     break
                 case _:
@@ -453,13 +453,13 @@ def caminho_mago() -> None:
         while True:
             clear()
             print("Você usa o cajado de gelo para abrir a porta, entrando você vê o dragão sobre uma montanha de corpos, você vai até ele e conversa com ele, você acaba descobrindo que ele tinha sido preso ali pelo rei demônio o real vilão dessa historia toda, e agora que ele estava livre ele está pronto pra juntar seus irmãos e ir contra o rei demônio, você pode ajudar ele ou não:")
-            escolha: str = input("0 | ajudar ele \n1 | não ajudar ele \n\n|| ")
+            escolha: str = input("1 | ajudar ele \n2 | não ajudar ele \n\n|| ")
 
             match escolha:
-                case '0':
+                case '1':
                     ajudar_dragaon=True
                     break
-                case '1':
+                case '2':
                     nao_ajudar_dragaon=True
                     break
                 case _:

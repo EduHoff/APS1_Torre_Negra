@@ -6,11 +6,11 @@ def controle_main_loop() -> None:
     while True:
         clear()
         print("Por favor, escolha se deseja continuar ou não o jogo:")
-        escolha: str = input("0 | sair \n1 | reiniciar\n\n|| ")
+        escolha: str = input("1 | sair \n2 | reiniciar\n\n|| ")
         match escolha:
-            case '0':
-                break
             case '1':
+                break
+            case '2':
                 main()
                 break
             case _:
