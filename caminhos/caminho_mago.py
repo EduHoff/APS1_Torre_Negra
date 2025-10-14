@@ -376,7 +376,7 @@ def caminho_mago() -> None:
     
     if construtiva and caminhada and investigar and seguir_caminho:
         clear()
-        print("Você continua indo no seu caminho após de despedir da ursa, você chega na cidade infelizmente os goblins ali perto não são tão amigáveis a ponto de você conseguir conversar com eles, e sem auxilio você é uma presa fácil, então não preciso nem dizer o que acontece com você, parabéns você morreu.")
+        print("Você continua seu caminho após se despedir do urso e chega à cidade infelizmente os goblins ali perto não são tão amigáveis a ponto de você conseguir conversar com eles, e sem auxilio você é uma presa fácil, então não preciso nem dizer o que acontece com você, parabéns você morreu.")
         input("\nPressione Enter para continuar...")
         return
     
