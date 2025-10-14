@@ -21,7 +21,17 @@ def caminho_dragao() -> None:
     porta_frente:bool=False
     parede:bool=False
 
+    exterminar:bool=False
+    continuar:bool=False
 
+    ir_direto:bool=False
+    explorar:bool=False
+
+    enfrentar_cerberus:bool=False
+    sacrificar:bool=False
+    domesticar:bool=False
+
+    enfrentar_rei_demonio:bool=False
 
     clear()
     nome:str=input("Escolha o seu nome: ")
@@ -149,7 +159,7 @@ def caminho_dragao() -> None:
     if auxilio:
         while True:
             clear()
-            print("Você é o rei dragão, o mais poderoso dentre todos os dragões, há muito tempo atrás quando você ainda era jovem você enfrentou o rei demonio, ele infelizmente venceu contra você, e te aprisionou em um limbo, porem sua força cresceu demais, ele teve que te colocar numa torre em alguma cidade aleatória, e foi aprisionado lá, se algum mago surgisse ele poderia usar das magias guardadas para lhe matar, felizmente o mago que lhe encontrou não era um desses, ele decidiu conversar, diferente dos outros soldados que haviam entrado anteriormente, graças a ele você foi verdadeiramente libertado, agora mais poderoso que nunca é hora de enfrentar o rei demonio, com um auxilio, você aproveita pra entregar para o mago todo conhecimento magico que você poderia entregar a um mortal, para ele poder lhe ajudar verdadeiramente na luta, e tambem usou sua magia para aprimorar a ursa, com os dois nas suas costas você voou até o castelo do rei demonio como entrara na torre?")
+            print("Você é o rei dragão, o mais poderoso dentre todos os dragões, há muito tempo atrás quando você ainda era jovem você enfrentou o rei demônio, ele infelizmente venceu contra você, e te aprisionou em um limbo, porém sua força cresceu demais, ele teve que te colocar numa torre em alguma cidade aleatória, e foi aprisionado lá, se algum mago surgisse ele poderia usar das magias guardadas para lhe matar, felizmente o mago que lhe encontrou não era um desses, ele decidiu conversar, diferente dos outros soldados que haviam entrado anteriormente, graças a ele você foi verdadeiramente libertado, agora mais poderoso que nunca é hora de enfrentar o rei demônio, com um auxilio, você aproveita pra entregar para o mago todo conhecimento magico que você poderia entregar a um mortal, para ele poder lhe ajudar verdadeiramente na luta, e tambem usou sua magia para aprimorar a ursa, com os dois nas suas costas você voou até o castelo do rei demônio como entrara na torre?")
             escolha: str = input("1 | porta da frente \n2 | parede \n\n|| ")
 
             match escolha:
@@ -162,3 +172,127 @@ def caminho_dragao() -> None:
                 case _:
                     print("Opção inválida! Tente novamente.")
                     input("\nPressione Enter para continuar...")
+    
+    if auxilio and parede:
+        clear()
+        print("Não tem motivo pra atravessar o castelo inteiro, vocês vão direto na sala do rei demônio, infelizmente não é um confronto simples, diversos monstros e demônios se juntam a luta incluindo um cerberus, vocês não tem como enfrentar isso tudo. Parabéns, vocês morreram brutalmente.")
+        input("\nPressione Enter para continuar...")
+        return
+    
+    if auxilio and porta_frente:
+        while True:
+            clear()
+            print("Você chega na frente do castelo e abre o portão da frente destruindo ele com um simples rugido, diversos monstros e demônios tentam atacar você mas nada que eles fazem consegue te machucar o que fará?")
+            escolha: str = input("1 | exterminar \n2 | continuar \n\n|| ")
+
+            match escolha:
+                case '1':
+                    exterminar=True
+                    break
+                case '2':
+                    continuar=True
+                    break
+                case _:
+                    print("Opção inválida! Tente novamente.")
+                    input("\nPressione Enter para continuar...")
+    
+    if auxilio and porta_frente and continuar:
+        clear()
+        print("Vocês avançam ignorando todos os monstros até que chegam em um cerberus, com todos os monstros juntos infelizmente não tem o que possa ser feito, vocês conseguem matar todos os monstros e o cerberus, mas mesmo com toda sua força, você mal sobrevive e seus amigos morrem, você nem tem uma chance de fugir antes do rei demônio chegar e te matar. Parabéns, você morreu.")
+        input("\nPressione Enter para continuar...")
+        return
+    
+    if auxilio and porta_frente and exterminar:
+        while True:
+            clear()
+            print("Para defender seus colegas você extermina os monstros ali com pouca dificuldade, vocês podem continuar sem problemas, qual rota irá tomar?")
+            escolha: str = input("1 | ir direto \n2 | explorar \n\n|| ")
+
+            match escolha:
+                case '1':
+                    ir_direto=True
+                    break
+                case '2':
+                    explorar=True
+                    break
+                case _:
+                    print("Opção inválida! Tente novamente.")
+                    input("\nPressione Enter para continuar...")
+    
+    if auxilio and porta_frente and exterminar and explorar:
+        while True:
+            clear()
+            print("Vocês exploram um pouco do castelo antes de seguir, e encontram uma enorme carne, não se sabe o que podem fazer com isso mas pode ser util, vocês podem logo seguir até a sala do rei demônio porem tem um cerberus na frente. O que fará?")
+            escolha: str = input("1 | enfrentar \n2 | sacrificar \n3 | domesticar \n\n|| ")
+
+            match escolha:
+                case '1':
+                    enfrentar_cerberus=True
+                    break
+                case '2':
+                    sacrificar=True
+                    break
+                case '3':
+                    domesticar=True
+                    break
+                case _:
+                    print("Opção inválida! Tente novamente.")
+                    input("\nPressione Enter para continuar...")
+    
+    if auxilio and porta_frente and exterminar and explorar and domesticar:
+        clear()
+        print("O mago dá a ideia de domesticar o cerberus, você segue com essa ideia maluca, que de algum jeito funciona, ele se junta a vocês, graças a isso vocês podem enfrentar o rei demônio com mais um aliado. Vocês entram dentro da sala do rei demônio, e enfrentam ele com muita dificuldade porém graças ao cerberus vocês conseguem matar ele sem ninguem morrer. Melhor final, o rei demônio perdeu.")
+        input("\nPressione Enter para continuar...")
+        return
+    
+    if auxilio and porta_frente and exterminar and ir_direto:
+        while True:
+            clear()
+            print("Você ignora qualquer outro tipo de distração que possa surgir e vai reto em direção a sala do rei demônio, no caminho você encontra um ser do seu tamanho, um enorme cerberus, existem dois jeitos de passar:")
+            escolha: str = input("1 | enfrentar \n2 | sacrificar \n\n|| ")
+
+            match escolha:
+                case '1':
+                    enfrentar_cerberus=True
+                    break
+                case '2':
+                    sacrificar=True
+                    break
+                case _:
+                    print("Opção inválida! Tente novamente.")
+                    input("\nPressione Enter para continuar...")
+    
+    if auxilio and porta_frente and exterminar and (ir_direto or explorar) and sacrificar:
+        clear()
+        print("Alguém tem que impedir o cerberus de atrapalhar a luta, e apenas você tem alguma chance contra o rei demônio, você deixa seus amigos ali e dá a volta, deixando eles para se enfrentarem, e passa pela parede entrando na sala do rei demônio, você enfrenta o rei demônio com muita dificuldade, ele ainda é mais poderoso que você e quase te mata, porem seus amigos não te abandonarão como você, o cerberus junto do mago e da ursa entram no salão e todos se juntam a luta, com todos juntos vocês conseguem matar o rei demônio, mas você acaba morrendo, final feliz o rei demônio foi morto.")
+        input("\nPressione Enter para continuar...")
+        return
+    
+    if auxilio and porta_frente and exterminar and (ir_direto or explorar) and enfrentar_cerberus:
+        while True:
+            clear()
+            print("Alguém tem que impedir o cerberus de atrapalhar a luta e não tem como seguir sem matar ele, você fica e manda o urso e o mago para resolverem a situação do rei demônio, você enfrenta o cerberus com dificuldade, afinal você ainda está se recuperando do seu aprisionamento, você consegue matar o cerberus mas está bem machucado. O que fará?")
+            escolha: str = input("1 | fugir \n2 | enfrentar rei demônio \n\n|| ")
+
+            match escolha:
+                case '1':
+                    fugir=True
+                    break
+                case '2':
+                    enfrentar_rei_demonio=True
+                    break
+                case _:
+                    print("Opção inválida! Tente novamente.")
+                    input("\nPressione Enter para continuar...")
+    
+    if auxilio and porta_frente and exterminar and (ir_direto or explorar) and enfrentar_cerberus and enfrentar_rei_demonio:
+        clear()
+        print("Não é hora de deixar seus amigos pra morrer, você entra dentro da sala, no último momento possível um segundo antes do mago ser morto, você combate o rei demônio porém graças a seus ferimentos você não consegue mata-lo. Ele te mata, logo em seguida ele termina de matar o mago e a ursa. Final horrivel, o rei demônio venceu.")
+        input("\nPressione Enter para continuar...")
+        return
+    
+    if auxilio and porta_frente and exterminar and (ir_direto or explorar) and enfrentar_cerberus and fugir:
+        clear()
+        print("Não faz sentido entrar em uma luta que você sabe que vai perder, infelizmente seus amigos vão morrer, você tenta fugir, no momento em que sai do castelo, uma maldição se ativa em você, e por estar tão fraco, não consegue aguentar, caindo e morrendo lentamente. Pior final, o rei demônio venceu e vai usar sua carcaça como vassalo.")
+        input("\nPressione Enter para continuar...")
+        return
