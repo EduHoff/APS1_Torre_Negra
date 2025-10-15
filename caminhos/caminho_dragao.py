@@ -2,6 +2,7 @@ from auxiliar.clear import clear
 
 def caminho_dragao() -> None:
 
+    #variáveis booleanas para evitar muitos alinhamentos de if dentro de outros if o que deixaria muito dificil a construção da história
     auxilio:bool=False
 
     questionar_homem:bool=False
@@ -33,6 +34,7 @@ def caminho_dragao() -> None:
 
     enfrentar_rei_demonio:bool=False
 
+    #todas as ramificações começam logo abaixo. os nomes das váriaveis usados nas estruturas IF indica quais ações foram tomadas para alcançar esse ponto da história, por tanto não há necessiadade de comentar cada um deles
     clear()
     nome:str=input("Escolha o seu nome: ")
     if nome.lower() == "auxilio":

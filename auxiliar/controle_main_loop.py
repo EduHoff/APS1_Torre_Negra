@@ -1,5 +1,6 @@
 from .clear import clear
 
+#função que vai requisitar ao usuário se ele vai querer reiniciar o rpg ou sair do programa
 def controle_main_loop() -> None:
     from main import main
 

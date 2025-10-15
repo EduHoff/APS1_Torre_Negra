@@ -1,6 +1,7 @@
 from auxiliar import clear, controle_main_loop
 from caminhos import caminho_mago, caminho_guerreiro, caminho_dragao
 
+#programa principal onde o usuário pode escolher sua classe e por consequência sua jornada
 def main() -> None:
     while True:
         clear()
@@ -21,7 +22,7 @@ def main() -> None:
                 print("Opção inválida! Tente novamente.")
                 input("\nPressione Enter para continuar...")
 
-    controle_main_loop()
+    controle_main_loop() #função que vai requisitar ao usuário se ele vai querer reiniciar o rpg ou sair do programa
 
 if __name__ == "__main__":
     main()

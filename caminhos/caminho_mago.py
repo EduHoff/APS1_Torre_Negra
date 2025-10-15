@@ -2,6 +2,7 @@ from auxiliar.clear import clear
 
 def caminho_mago() -> None:
 
+    #variáveis booleanas para evitar muitos alinhamentos de if dentro de outros if o que deixaria muito dificil a construção da história
     destrutiva:bool=False
     construtiva:bool=False
 
@@ -39,6 +40,7 @@ def caminho_mago() -> None:
     ajudar_dragaon:bool=False
     nao_ajudar_dragaon:bool=False
 
+    #todas as ramificações começam logo abaixo. os nomes das váriaveis usados nas estruturas IF indica quais ações foram tomadas para alcançar esse ponto da história, por tanto não há necessiadade de comentar cada um deles
     while True:
         clear()
         print("Por favor, escolha seu foco de magia:")
