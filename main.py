@@ -5,6 +5,7 @@ from caminhos import caminho_mago, caminho_guerreiro, caminho_dragao
 def main() -> None:
     while True:
         clear()
+        print("RPG: A Torre Negra\n")
         print("Por favor, escolha uma classe:")
         escolha: str = input("1 | mago \n2 | guerreiro \n3 | dragão \n\n|| ")
 
